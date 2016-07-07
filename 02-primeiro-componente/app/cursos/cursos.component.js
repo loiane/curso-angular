@@ -9,10 +9,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var cursos_service_1 = require('./cursos.service');
 var CursosComponent = (function () {
-    function CursosComponent() {
+    function CursosComponent(cursosService) {
         this.nomePortal = 'loiane.traning';
-        this.cursos = ['Angular 2', 'Java', 'Ext JS'];
+        this.cursos = null;
+        this.cursos = cursosService.getCursos();
     }
     CursosComponent = __decorate([
         core_1.Component({
@@ -26,9 +28,10 @@ var CursosComponent = (function () {
                   </li>
                 </ul>
             `*/
-            templateUrl: 'cursos.component.html'
+            templateUrl: 'cursos.component.html',
+            providers: [cursos_service_1.CursosService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [cursos_service_1.CursosService])
     ], CursosComponent);
     return CursosComponent;
 }());
