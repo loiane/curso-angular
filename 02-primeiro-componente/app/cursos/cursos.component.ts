@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { CursosService } from './cursos.service';
+
 @Component({
   moduleId: module.id,
   selector: 'cursos-lista',
@@ -11,11 +13,16 @@ import { Component } from '@angular/core';
         </li>
       </ul>
   `*/
-  templateUrl: 'cursos.component.html'
+  templateUrl: 'cursos.component.html',
+  providers: [CursosService]
 })
 export class CursosComponent {
 
   nomePortal = 'loiane.traning';
 
-  cursos = ['Angular 2', 'Java',  'Ext JS'];
+  cursos;
+
+  constructor(cursosService: CursosService){
+    this.cursos = cursosService.getCursos();
+  }
 }
