@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-import { CursosService } from './cursos.service';
-
 @Component({
   moduleId: module.id,
   selector: 'cursos-lista',
@@ -19,9 +17,6 @@ import { CursosService } from './cursos.service';
 export class CursosComponent {
 
   nomePortal = 'loiane.traning';
-  cursos = null;
 
-  constructor(cursosService: CursosService){
-    this.cursos = cursosService.getCursos();
-  }
+  
 }
