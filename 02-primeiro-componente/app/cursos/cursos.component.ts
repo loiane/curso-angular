@@ -11,12 +11,11 @@ import { Component } from '@angular/core';
         </li>
       </ul>
   `*/
-  templateUrl: 'cursos.component.html',
-  providers: [CursosService]
+  templateUrl: 'cursos.component.html'
 })
 export class CursosComponent {
 
   nomePortal = 'loiane.traning';
 
-  
+  cursos = ['Angular 2', 'Java',  'Ext JS'];
 }
