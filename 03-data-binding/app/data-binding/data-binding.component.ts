@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 export class DataBindingComponent {
   constructor() {  }
 
+  url = 'http://loiane.com';
+  urlImg = 'http://lorempixel.com/400/200/nature/';
+
+  getValor(){
+    return 1;
+  }
 }
