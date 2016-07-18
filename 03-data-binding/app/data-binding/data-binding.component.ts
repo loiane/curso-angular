@@ -35,7 +35,7 @@ export class DataBindingComponent {
 
   onKeyup(event:KeyboardEvent){
     console.log(event);
-    this.conteudoAtual = (<HTMlInputElement>event.target).value;
+    this.conteudoAtual = (<HTMLInputElement>event.target).value;
   }
 
   onSave(valor : string){
