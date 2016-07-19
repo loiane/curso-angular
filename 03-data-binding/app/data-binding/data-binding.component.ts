@@ -25,6 +25,10 @@ export class DataBindingComponent {
 
   isMouseOver = false;
 
+  nome : string = 'abc';
+
+  pessoa = {nome: '', idade: 18};
+
   getValor(){
     return 1;
   }
