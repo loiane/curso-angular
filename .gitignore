@@ -2,3 +2,5 @@
 npm-debug.log
 
 03-data-binding/app/data-binding/data-binding.component.js
+
+03-data-binding/app/data-binding/input-property.component.js

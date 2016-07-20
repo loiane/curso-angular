@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { InputPropertyComponent } from './input-property.component';
+
 @Component({
   moduleId: module.id,
   selector: 'exemplo-data-binding',
@@ -12,7 +14,8 @@ import { Component } from '@angular/core';
       }
     `
   ]*/
-  styleUrls: ['data-binding.component.css']
+  styleUrls: ['data-binding.component.css'],
+  directives: [InputPropertyComponent]
 })
 export class DataBindingComponent {
   constructor() {  }
@@ -28,6 +31,8 @@ export class DataBindingComponent {
   nome : string = 'abc';
 
   pessoa = {nome: '', idade: 18};
+
+  nomeCurso : string = 'Curso Angular 2';
 
   getValor(){
     return 1;
