@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { InputPropertyComponent } from './input-property.component';
+import { OutputPropertyComponent } from './output-property.component';
 
 @Component({
   moduleId: module.id,
@@ -15,7 +16,7 @@ import { InputPropertyComponent } from './input-property.component';
     `
   ]*/
   styleUrls: ['data-binding.component.css'],
-  directives: [InputPropertyComponent]
+  directives: [InputPropertyComponent, OutputPropertyComponent]
 })
 export class DataBindingComponent {
   constructor() {  }
@@ -33,6 +34,8 @@ export class DataBindingComponent {
   pessoa = {nome: '', idade: 18};
 
   nomeCurso : string = 'Curso Angular 2';
+
+  valorInicial : number = 10;
 
   getValor(){
     return 1;
@@ -53,5 +56,9 @@ export class DataBindingComponent {
 
   onMouseSpan(){
     this.isMouseOver = !this.isMouseOver;
+  }
+
+  onValorMudou(event){
+    alert(event.novoValor);
   }
 }

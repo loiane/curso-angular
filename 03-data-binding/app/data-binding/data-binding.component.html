@@ -130,5 +130,7 @@
 
     <curso [nome]="nomeCurso"></curso>
 
+    <contador [valor]="valorInicial"
+      (mudouValor)="onValorMudou($event)"></contador>
   </article>
 </section>
