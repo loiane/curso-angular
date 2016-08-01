@@ -8,14 +8,16 @@ import {
   AfterViewInit,
   AfterViewChecked,
   OnDestroy,
-  Input
+  Input,
+  ViewChild
 } from '@angular/core';
 
 @Component({
   moduleId: module.id,
   selector: 'lifecycle',
   template: `
-    <p>{{valorInicial}}</p>
+    <p #variavelLocalP >{{valorInicial}}</p>
+    <p>{{ variavelLocalP.textContent }}</p>
   `,
 })
 export class LifeCycleComponent implements OnChanges, OnInit,
@@ -24,16 +26,21 @@ export class LifeCycleComponent implements OnChanges, OnInit,
 
       @Input() valorInicial = 10;
 
+      @ViewChild('variavelLocalP') variavelLocalP : HTMLElement;
+
       constructor() {
         this.log('constructor');
+        console.log(this.variavelLocalP);
       }
 
       ngOnChanges() {
         this.log('ngOnChanges');
+        console.log(this.variavelLocalP);
       }
 
       ngOnInit() {
         this.log('ngOnInit');
+        console.log(this.variavelLocalP);
       }
 
       ngDoCheck() {
@@ -46,6 +53,7 @@ export class LifeCycleComponent implements OnChanges, OnInit,
 
       ngAfterContentChecked() {
         this.log('ngAfterContentChecked');
+        console.log(this.variavelLocalP);
       }
 
       ngAfterViewInit() {
@@ -54,6 +62,7 @@ export class LifeCycleComponent implements OnChanges, OnInit,
 
       ngAfterViewChecked() {
         this.log('ngAfterViewChecked');
+        console.log(this.variavelLocalP);
       }
 
       ngOnDestroy() {
