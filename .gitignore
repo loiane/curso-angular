@@ -6,3 +6,11 @@ npm-debug.log
 03-data-binding/app/data-binding/input-property.component.js
 
 03-data-binding/app/ciclo/life-cycle.component.js
+
+*.iml
+
+.idea/modules.xml
+
+.idea/vcs.xml
+
+.idea/workspace.xml
