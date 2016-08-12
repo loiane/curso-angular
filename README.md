@@ -3,6 +3,8 @@ Curso Angular 2 Gratuito
 
 Código fonte apresentado no curso de Angular gratuito do blog loiane.com - loiane.training
 
+Atualizado para Angular 2 RC 5
+
 ### Link do curso com certificado:
 * [http://loiane.training/curso/angular-2/](http://loiane.training/curso/angular-2/)
 
