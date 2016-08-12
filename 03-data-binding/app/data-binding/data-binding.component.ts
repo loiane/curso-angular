@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 
-import { InputPropertyComponent } from './input-property.component';
-import { OutputPropertyComponent } from './output-property.component';
-
 @Component({
   moduleId: module.id,
   selector: 'exemplo-data-binding',
@@ -15,8 +12,7 @@ import { OutputPropertyComponent } from './output-property.component';
       }
     `
   ]*/
-  styleUrls: ['data-binding.component.css'],
-  directives: [InputPropertyComponent, OutputPropertyComponent]
+  styleUrls: ['data-binding.component.css']
 })
 export class DataBindingComponent {
   constructor() {  }

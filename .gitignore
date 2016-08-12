@@ -1,16 +1,11 @@
-
 npm-debug.log
 
-03-data-binding/app/data-binding/data-binding.component.js
-
-03-data-binding/app/data-binding/input-property.component.js
-
-03-data-binding/app/ciclo/life-cycle.component.js
+03-data-binding/app/**/*.js
+02-primeiro-componente/app/**/*.js
 
 *.iml
 
-.idea/modules.xml
+.idea/*
+02-primeiro-componente/app/cursos/cursos.component.js
 
-.idea/vcs.xml
-
-.idea/workspace.xml
+02-primeiro-componente/app/cursos/cursos.component.js

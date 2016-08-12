@@ -13,8 +13,7 @@ import { CursosService } from './cursos.service';
         </li>
       </ul>
   `*/
-  templateUrl: 'cursos.component.html',
-  providers: [CursosService]
+  templateUrl: 'cursos.component.html'
 })
 export class CursosComponent {
 
