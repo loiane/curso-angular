@@ -34,24 +34,27 @@ Aulas publicadas/programadas
 * 14: Output properties
 * 15: Ciclo de vida (life-cycle) do Componente
 * 16: Acesso à variáveis locais do Template com ViewChild
+* Extra: Atualizações do RC 5 e ngModule
 
 #### Angular CLI: Introdução
 * 17: Angular CLI: Instalação e criação de projetos: ng new e ng serve
 * 18: Angular CLI: Criando components, services: ng generate
-* 19: Angular CLI: Estrutura do projeto
-* 20: Angular CLI: Fazendo build
-* 21: Angular CLI: ng lint, ng test, ng e2e
-* 22: Angular CLI: instalando bibliotecas (bootstrap)
+* Extra: Angular CLI: atualizando para versão RC5 (webpack)
+* 19: Angular CLI: Usando pré-processadores (Sass, Less, Stylus)
+* 20: Angular CLI: ng lint, ng test, ng e2e
+* 21: Angular CLI: Estrutura do projeto
+* 22: Angular CLI: Fazendo build
+* 23: Angular CLI: instalando bibliotecas (bootstrap)
 
 #### Diretivas
-* 23: Introdução e tipos de diretivas no Angular 2
-* 24: ngIf
-* 25: ngSwitch
-* 26: ngFor
-* 27: sobre o asterisco
-* 28: ng-content
-* 29: ngClass e ngStyle
-* 30: operador elvis
+* XX: Introdução e tipos de diretivas no Angular 2
+* XX: ngIf
+* XX: ngSwitch
+* XX: ngFor
+* XX: sobre o asterisco
+* XX: ng-content
+* XX: ngClass e ngStyle
+* XX: operador elvis
 * XX: Diretivas de atributos (ngClass e ngStyle)
 * XX: Criando um diretiva de atributo
 * XX: HostListener e HostBinding
