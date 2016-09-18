@@ -1,18 +1,15 @@
-import 'core-js/es6';
-import 'core-js/es7/reflect';
+import './polyfills.ts';
 
-// Typescript emit helpers polyfill
-import 'ts-helpers';
-
-import 'zone.js/dist/zone';
 import 'zone.js/dist/long-stack-trace-zone';
+import 'zone.js/dist/proxy.js';
+import 'zone.js/dist/sync-test';
 import 'zone.js/dist/jasmine-patch';
 import 'zone.js/dist/async-test';
 import 'zone.js/dist/fake-async-test';
-import 'zone.js/dist/sync-test';
 
 // Unfortunately there's no typing for the `__karma__` variable. Just declare it as any.
 declare var __karma__: any;
+declare var require: any;
 
 // Prevent Karma from running prematurely.
 __karma__.loaded = function () {};
@@ -24,9 +21,9 @@ Promise.all([
 ])
   // First, initialize the Angular testing environment.
   .then(([testing, testingBrowser]) => {
-    testing.setBaseTestProviders(
-      testingBrowser.TEST_BROWSER_DYNAMIC_PLATFORM_PROVIDERS,
-      testingBrowser.TEST_BROWSER_DYNAMIC_APPLICATION_PROVIDERS
+    testing.getTestBed().initTestEnvironment(
+      testingBrowser.BrowserDynamicTestingModule,
+      testingBrowser.platformBrowserDynamicTesting()
     );
   })
   // Then we find all the tests.

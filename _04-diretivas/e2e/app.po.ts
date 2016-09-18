@@ -1,3 +1,5 @@
+import { browser, element, by } from 'protractor/globals';
+
 export class 04DiretivasPage {
   navigateTo() {
     return browser.get('/');
