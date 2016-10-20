@@ -3,7 +3,7 @@ Curso Angular 2 Gratuito
 
 Código fonte apresentado no curso de Angular gratuito do blog loiane.com - loiane.training
 
-Atualizado para Angular 2 RC 5
+Atualizado para Angular 2 (final)
 
 ### Link do curso com certificado:
 * [http://loiane.training/curso/angular-2/](http://loiane.training/curso/angular-2/)
@@ -44,13 +44,13 @@ Aulas publicadas/programadas
 * 20: Angular CLI: ng lint, ng test, ng e2e
 * 21: Angular CLI: Estrutura do projeto
 * 22: Angular CLI: Fazendo build
-* 23: Angular CLI: instalando bibliotecas (bootstrap)
+* 23: Angular CLI: instalando bibliotecas (bootstrap, materialize, lodash, jquery, etc)
 
 #### Diretivas
-* XX: Introdução e tipos de diretivas no Angular 2
-* XX: ngIf
-* XX: ngSwitch
-* XX: ngFor
+* 24: Introdução e tipos de diretivas no Angular 2
+* 25: ngIf
+* 26: ngSwitch
+* 27: ngFor
 * XX: sobre o asterisco
 * XX: ng-content
 * XX: ngClass e ngStyle
