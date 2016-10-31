@@ -51,15 +51,15 @@ Aulas publicadas/programadas
 * 25: ngIf
 * 26: ngSwitch
 * 27: ngFor
-* XX: sobre o asterisco
-* XX: ng-content
-* XX: ngClass e ngStyle
-* XX: operador elvis
-* XX: Diretivas de atributos (ngClass e ngStyle)
-* XX: Criando um diretiva de atributo
-* XX: HostListener e HostBinding
-* XX: Property Binding de Diretivas
-* XX: Criando uma diretiva de estrutura
+* 28: sobre o asterisco
+* 29: ngClass
+* 10: ngStyle
+* 31: operador elvis
+* 32: ng-content
+* 33: Criando uma diretiva de atributo
+* 34: HostListener e HostBinding
+* 35: Property Binding de Diretivas
+* 36: Criando uma diretiva de estrutura
 
 #### Pipes
 
