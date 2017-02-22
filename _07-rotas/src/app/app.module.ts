@@ -1,3 +1,4 @@
+import { CursosGuard } from './guards/cursos.guard';
 import { AlunosGuard } from './guards/alunos.guard';
 import { AuthGuard } from './guards/auth.guard';
 import { BrowserModule } from '@angular/platform-browser';
@@ -39,6 +40,7 @@ import { AuthService } from './login/auth.service';
   providers: [
     AuthService, 
     AuthGuard,
+    CursosGuard,
     AlunosGuard
   ],
   //providers: [CursosService],
