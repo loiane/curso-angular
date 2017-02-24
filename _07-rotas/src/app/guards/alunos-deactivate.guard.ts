@@ -15,8 +15,8 @@ export class AlunosDeactivateGuard implements CanDeactivate<IFormCanDeactivate> 
 
             console.log('guarda de desativação');
 
-            //return component.podeMudarRota();
+            //return component.podeMudarRota ? component.podeMudarRota() : true;
 
-            return component.podeDesativar();
+            return component.podeDesativar ? component.podeDesativar() : true;
     }
 }
