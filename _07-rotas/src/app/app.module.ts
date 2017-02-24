@@ -18,12 +18,14 @@ import { AppRoutingModule } from './app.routing.module';
 //import { CursosModule } from './cursos/cursos.module';
 //import { AlunosModule } from './alunos/alunos.module';
 import { AuthService } from './login/auth.service';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent/*,
+    LoginComponent,
+    PaginaNaoEncontradaComponent/*,
     CursosComponent,
     CursoDetalheComponent,
     CursoNaoEncontradoComponent*/
