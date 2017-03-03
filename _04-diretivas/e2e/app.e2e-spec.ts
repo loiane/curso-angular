@@ -1,10 +1,10 @@
-import { DiretivasPage } from './app.po';
+import { 04DiretivasPage } from './app.po';
 
-describe('diretivas App', () => {
-  let page: DiretivasPage;
+describe('-04-diretivas App', function() {
+  let page: 04DiretivasPage;
 
   beforeEach(() => {
-    page = new DiretivasPage();
+    page = new 04DiretivasPage();
   });
 
   it('should display message saying app works', () => {
