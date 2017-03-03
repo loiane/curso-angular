@@ -1,10 +1,10 @@
-import { 07RotasPage } from './app.po';
+import { RotasPage } from './app.po';
 
-describe('-07-rotas App', function() {
-  let page: 07RotasPage;
+describe('rotas App', () => {
+  let page: RotasPage;
 
   beforeEach(() => {
-    page = new 07RotasPage();
+    page = new RotasPage();
   });
 
   it('should display message saying app works', () => {
