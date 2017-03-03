@@ -1,10 +1,10 @@
-import { 06PipesPage } from './app.po';
+import { PipesPage } from './app.po';
 
-describe('-06-pipes App', function() {
-  let page: 06PipesPage;
+describe('pipes App', () => {
+  let page: PipesPage;
 
   beforeEach(() => {
-    page = new 06PipesPage();
+    page = new PipesPage();
   });
 
   it('should display message saying app works', () => {

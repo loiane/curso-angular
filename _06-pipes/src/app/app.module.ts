@@ -32,7 +32,7 @@ import { FiltroArrayImpuroPipe } from './filtro-array-impuro.pipe';
     {
       provide: LOCALE_ID,
       deps: [SettingsService],
-      useFactory: (settingsService) => settingsService.getLocale()
+      useFactory: settingsService => settingsService.getLocale()
     }
   ],
   bootstrap: [AppComponent]
