@@ -1,15 +1,42 @@
 <form #f="ngForm" (ngSubmit)="onSubmit(f)">
-  <div class="form-group">
-    <label for="nome">Nome</label>
+  <div class="form-group"
+    [class.has-error]="!nome.valid && nome.touched"
+    [class.has-feedback]="!nome.valid && nome.touched">
+    <label for="nome" class="control-label">Nome</label>
     <input type="text" class="form-control" name="nome" 
-      id="nome" placeholder="Nome" [ngModel]="usuario.nome">
+      id="nome" placeholder="Nome" [ngModel]="usuario.nome"
+      required #nome="ngModel">
+     <!--div>
+       {{ nome.className }}
+     </div--> 
+     <span class="glyphicon glyphicon-remove form-control-feedback" 
+     aria-hidden="true" *ngIf="!nome.valid && nome.touched" ></span>
+    <span id="nome" class="sr-only" *ngIf="!nome.valid && nome.touched" >(error)</span>
+     <div *ngIf="!nome.valid && nome.touched" 
+      class="alert alert-danger" role="alert">
+       Nome é obrigatório.
+     </div>
   </div>
 
-  <div class="form-group">
-    <label for="email">Email</label>
+  <div class="form-group"
+    [class.has-error]="!email.valid && email.touched"
+    [class.has-feedback]="!email.valid && email.touched">
+    <label for="email" class="control-label">Email</label>
     <input type="email" class="form-control" name="email"
-      id="email" placeholder="nome@email.com" [ngModel]="usuario.email">
+      id="email" placeholder="nome@email.com" [ngModel]="usuario.email"
+      required email #email="ngModel">
+    <!-- pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" -->  
+  
+    <span class="glyphicon glyphicon-remove form-control-feedback" 
+     aria-hidden="true" *ngIf="!email.valid && email.touched" ></span>
+    <span id="email" class="sr-only" *ngIf="!nome.valid && email.touched" >(error)</span>
+     <div *ngIf="!email.valid && email.touched" 
+      class="alert alert-danger" role="alert">
+       Email inválido.
+     </div>
+  
   </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary"
+    [disabled]="!f.valid">Submit</button>
 </form>
