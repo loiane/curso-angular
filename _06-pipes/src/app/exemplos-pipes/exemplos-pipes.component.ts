@@ -33,12 +33,9 @@ export class ExemplosPipesComponent implements OnInit {
       return this.livros;
     }
 
-     return this.livros.filter((v) => {
-      if (v.toLowerCase().indexOf(this.filtro.toLowerCase()) >= 0) {
-        return true;
-      }
-      return false;
-    });
+    return this.livros.filter(
+       v => v.toLocaleLowerCase().includes(this.filtro.toLocaleLowerCase())
+    );
   }
 
   valorAsync = new Promise((resolve, reject) => {

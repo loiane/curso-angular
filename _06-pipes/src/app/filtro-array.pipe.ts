@@ -13,7 +13,7 @@ export class FiltroArrayPipe implements PipeTransform {
 
     let filter = args.toLocaleLowerCase();
     return value.filter(
-      v => v.toLocaleLowerCase().indexOf(filter) != -1
+      v => v.toLocaleLowerCase().includes(filter)
     );
   }
 
