@@ -1,4 +1,4 @@
-<form class="form-horizontal" [formGroup]="formulario">
+<form class="form-horizontal" [formGroup]="formulario" (ngSubmit)="onSubmit()" >
   <div class="form-group">
     <div class="col-sm-12">
       <label for="nome" class="control-label">Nome</label>
@@ -7,7 +7,7 @@
     <div class="col-sm-12">
       <input type="text" class="form-control" formControlName="nome" 
         id="nome" placeholder="Nome" >
-     </div>
+    </div>
   </div>
 
   <div class="form-group">
