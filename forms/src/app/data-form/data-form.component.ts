@@ -1,6 +1,6 @@
 import { Http } from '@angular/http';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, FormBuilder } from "@angular/forms";
+import { FormGroup, FormControl, FormBuilder, Validators } from "@angular/forms";
 
 @Component({
   selector: 'app-data-form',
@@ -24,10 +24,12 @@ export class DataFormComponent implements OnInit {
     });*/
 
     this.formulario = this.formBuilder.group({
-      nome: [null],
-      email: [null]
+      nome: [null, Validators.required],
+      email: [null, [Validators.required, Validators.email]]
     });
 
+    //Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")
+    //[Validators.required, Validators.minLength(3), Validators.maxLength(20)]
 
   }
 
@@ -41,7 +43,7 @@ export class DataFormComponent implements OnInit {
         console.log(dados);
         //reseta o form
         //this.formulario.reset();
-        this.resetar();
+        //this.resetar();
       },
       (error: any) => alert('erro'));
   }
