@@ -20,12 +20,26 @@ export class DataFormComponent implements OnInit {
 
     /*this.formulario = new FormGroup({
       nome: new FormControl(null),
-      email: new FormControl(null)
+      email: new FormControl(null),
+
+      endereco: new FormGroup({
+        cep: new FormControl(null)
+      })
     });*/
 
     this.formulario = this.formBuilder.group({
       nome: [null, Validators.required],
-      email: [null, [Validators.required, Validators.email]]
+      email: [null, [Validators.required, Validators.email]],
+
+      endereco: this.formBuilder.group({
+        cep: [null, Validators.required],
+        numero: [null, Validators.required],
+        complemento: [null],
+        rua: [null, Validators.required],
+        bairro: [null, Validators.required],
+        cidade: [null, Validators.required],
+        estado: [null, Validators.required]
+      })
     });
 
     //Validators.pattern("[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?")
@@ -52,7 +66,7 @@ export class DataFormComponent implements OnInit {
     this.formulario.reset();
   }
 
-  verificaValidTouched(campo){
+  verificaValidTouched(campo: string){
     return !this.formulario.get(campo).valid && this.formulario.get(campo).touched;
   }
 
@@ -63,7 +77,7 @@ export class DataFormComponent implements OnInit {
     }
   }
 
-  aplicaCssErro(campo){
+  aplicaCssErro(campo: string){
     return {
       'has-error': this.verificaValidTouched(campo),
       'has-feedback': this.verificaValidTouched(campo)
