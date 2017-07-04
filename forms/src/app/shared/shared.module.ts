@@ -1,3 +1,4 @@
+import { ConsultaCepService } from './services/consulta-cep.service';
 import { HttpModule } from '@angular/http';
 import { DropdownService } from './services/dropdown.service';
 import { CampoControlErroComponent } from './campo-control-erro/campo-control-erro.component';
@@ -18,6 +19,6 @@ import { CommonModule } from '@angular/common';
     FormDebugComponent,
     CampoControlErroComponent
   ],
-  providers: [ DropdownService ]
+  providers: [ DropdownService, ConsultaCepService ]
 })
 export class SharedModule { }
