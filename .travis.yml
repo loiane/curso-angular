@@ -15,7 +15,7 @@ env:
   - CURSO_DIR=forms 
 
 script:
-  - cd $CURSO_DIR &&  ng build --prod
+  - cd $CURSO_DIR && npm install && ng build --prod
 
 notifications:
   email:
