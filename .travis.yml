@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - node # latest node
+
+before_script:
+  - npm install -g @angular/cli
+
+env:
+  - CURSO_DIR=_04-diretivas
+  - CURSO_DIR=_05-servicos 
+  - CURSO_DIR=_06-pipes 
+  - CURSO_DIR=_07-rotas 
+  - CURSO_DIR=data-binding 
+  - CURSO_DIR=forms 
+
+script:
+  - cd $CURSO_DIR &&  ng build --prod
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change
