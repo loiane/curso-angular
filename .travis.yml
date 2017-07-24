@@ -14,7 +14,7 @@ env:
   - CURSO_DIR=pipes
   - CURSO_DIR=angular-cli-libs-externas
   - CURSO_DIR=rotas
-  #- CURSO_DIR=forms
+  - CURSO_DIR=forms
 
 script:
   - cd $CURSO_DIR

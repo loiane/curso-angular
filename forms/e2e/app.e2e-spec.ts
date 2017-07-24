@@ -1,14 +1,14 @@
-import { FormsPage } from './app.po';
+import { AppPage } from './app.po';
 
 describe('forms App', () => {
-  let page: FormsPage;
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new FormsPage();
+    page = new AppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });
