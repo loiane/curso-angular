@@ -13,7 +13,7 @@ env:
   - CURSO_DIR=servicos
   - CURSO_DIR=pipes
   - CURSO_DIR=angular-cli-libs-externas
-  #- CURSO_DIR=_07-rotas
+  - CURSO_DIR=rotas
   #- CURSO_DIR=forms
 
 script:
