@@ -1,3 +1,4 @@
+import { ptbrLocale } from './pt-br-locale';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
@@ -8,8 +9,6 @@ import { CamelCasePipe } from './camel-case.pipe';
 import { SettingsService } from './settings.service';
 import { FiltroArrayPipe } from './filtro-array.pipe';
 import { FiltroArrayImpuroPipe } from './filtro-array-impuro.pipe';
-
-const meuLocale = settingsService => settingsService.getLocale();
 
 @NgModule({
   declarations: [
@@ -32,7 +31,7 @@ const meuLocale = settingsService => settingsService.getLocale();
     {
       provide: LOCALE_ID,
       deps: [SettingsService],
-      useFactory: meuLocale
+      useFactory: ptbrLocale
     }
   ],
   bootstrap: [AppComponent]
