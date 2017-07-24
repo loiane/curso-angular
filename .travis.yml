@@ -9,7 +9,7 @@ before_script:
 env:
   - CURSO_DIR=primeiro-projeto
   - CURSO_DIR=data-binding
-  #- CURSO_DIR=_04-diretivas
+  - CURSO_DIR=diretivas
   #- CURSO_DIR=_05-servicos
   #- CURSO_DIR=_06-pipes
   #- CURSO_DIR=angular-cli-libs-externas
