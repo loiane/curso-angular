@@ -1,4 +1,4 @@
-Curso Angular (versões 2.x, 4.x e 5.x) Gratuito
+Curso Angular (versões 2.x 4.x e 5.x) Gratuito
 =================
 
 [![Build Status](https://travis-ci.org/loiane/curso-angular2.svg?branch=master)](https://travis-ci.org/loiane/curso-angular2)
@@ -8,7 +8,7 @@ Código fonte apresentado no curso de Angular gratuito do blog loiane.com - loia
 
 **Código atualizado para Angular v5.0.0-beta.0**
 
-Arquivo `package.json` exposto no projeto para ser notificado das atualizações via greenkeeper.io.
+Arquivo `package.json` exposto no projeto para ser notificado das atualizações dos pacotes npm via greenkeeper.io.
 
 ### Link do curso com certificado:
 * [http://loiane.training/curso/angular-2/](http://loiane.training/curso/angular-2/)
