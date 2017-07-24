@@ -19,7 +19,7 @@ env:
 script:
   - cd $CURSO_DIR
   - npm install
-  - ng build --prod --aot=false
+  - ng build --prod
 
 notifications:
   email:
