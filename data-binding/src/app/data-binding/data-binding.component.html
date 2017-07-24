@@ -1,4 +1,4 @@
-<!--section class="property-binding">
+<section class="property-binding">
 
   <article>
     <h3>Interpolation / Interpolação</h3>
@@ -35,18 +35,18 @@
         [class.alert-success]="classe.value == 'alert-success'">
         Sucesso
       </div>
-      
+
       <div class="alert" role="alert"
       [class.alert-info]="classe.value == 'alert-info'">
         Info
       </div>
-      
-      <div class="alert" role="alert" 
+
+      <div class="alert" role="alert"
       [class.alert-warning]="classe.value == 'alert-warning'">
         Alerta
       </div>
-      
-      <div class="alert" role="alert" 
+
+      <div class="alert" role="alert"
       [class.alert-danger]="classe.value == 'alert-danger'"
       >
         Erro
@@ -60,9 +60,9 @@
     </div>
   </article>
 
-</section-->
+</section>
 
-<!--section class="event-binding">
+<section class="event-binding">
 
   <article>
     <h3>Event binding</h3>
@@ -77,11 +77,11 @@
       <input type="text"
         (keyup)="onKeyUp($event)"
         (keyup.enter)="salvarValor(campoInput.value)"
-        (blur)="salvarValor(campoInput.value)" 
+        (blur)="salvarValor(campoInput.value)"
         #campoInput />
 
-       <p>Valor atual: {{ valorAtual }}</p> 
-       <p>Valor salvo: {{ valorSalvo }}</p> 
+       <p>Valor atual: {{ valorAtual }}</p>
+       <p>Valor salvo: {{ valorSalvo }}</p>
 
        <br>
        <span
@@ -94,9 +94,9 @@
     </div>
   </article>
 
-</section!-->
+</section>
 
-<!--app-meu-form></app-meu-form-->
+<app-meu-form></app-meu-form>
 
 <section class="input-output-properties">
 
