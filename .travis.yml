@@ -11,7 +11,7 @@ env:
   - CURSO_DIR=data-binding
   - CURSO_DIR=diretivas
   - CURSO_DIR=servicos
-  #- CURSO_DIR=_06-pipes
+  - CURSO_DIR=pipes
   #- CURSO_DIR=angular-cli-libs-externas
   #- CURSO_DIR=_07-rotas
   #- CURSO_DIR=forms

@@ -1,7 +1,6 @@
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, LOCALE_ID } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ExemplosPipesComponent } from './exemplos-pipes/exemplos-pipes.component';
@@ -9,6 +8,8 @@ import { CamelCasePipe } from './camel-case.pipe';
 import { SettingsService } from './settings.service';
 import { FiltroArrayPipe } from './filtro-array.pipe';
 import { FiltroArrayImpuroPipe } from './filtro-array-impuro.pipe';
+
+const meuLocale = settingsService => settingsService.getLocale();
 
 @NgModule({
   declarations: [
@@ -20,8 +21,7 @@ import { FiltroArrayImpuroPipe } from './filtro-array-impuro.pipe';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule
+    FormsModule
   ],
   providers: [
     /*{
@@ -32,7 +32,7 @@ import { FiltroArrayImpuroPipe } from './filtro-array-impuro.pipe';
     {
       provide: LOCALE_ID,
       deps: [SettingsService],
-      useFactory: settingsService => settingsService.getLocale()
+      useFactory: meuLocale
     }
   ],
   bootstrap: [AppComponent]
