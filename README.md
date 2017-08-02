@@ -2,7 +2,7 @@ Curso Angular (versões 2.x 4.x e 5.x) Gratuito
 =================
 
 [![Build Status](https://travis-ci.org/loiane/curso-angular2.svg?branch=master)](https://travis-ci.org/loiane/curso-angular2)
-[![Greenkeeper badge](https://badges.greenkeeper.io/loiane/vscode-angular-ngrx.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/loiane/curso-angular2.svg.svg)](https://greenkeeper.io/)
 
 Código fonte apresentado no curso de Angular gratuito do blog loiane.com - loiane.training
 
