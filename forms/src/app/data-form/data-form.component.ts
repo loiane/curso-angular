@@ -1,16 +1,8 @@
-
-import {map} from 'rxjs/operators';
-import { ConsultaCepService } from './../shared/services/consulta-cep.service';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EstadoBr } from './../shared/models/estado-br.model';
 import { DropdownService } from './../shared/services/dropdown.service';
-import { Component, OnInit } from '@angular/core';
-import {
-  FormGroup,
-  FormControl,
-  FormBuilder,
-  Validators
-} from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-data-form',
@@ -24,9 +16,8 @@ export class DataFormComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private http: HttpClient,
-    private dropdownService: DropdownService,
-    private cepService: ConsultaCepService
-  ) {}
+    private dropdownService: DropdownService
+  ) { }
 
   ngOnInit() {
     this.dropdownService.getEstadosBr().subscribe(dados => {
@@ -121,9 +112,24 @@ export class DataFormComponent implements OnInit {
   }
 
   consultaCEP() {
-    const cep = this.formulario.get('endereco.cep').value;
-    this.cepService.consultaCEP(cep, this.resetaDadosForm, this.formulario)
-      .subscribe(dados => this.populaDadosForm(dados));
+    let cep = this.formulario.get('endereco.cep').value;
+
+    // Nova variável "cep" somente com dígitos.
+    cep = cep.replace(/\D/g, '');
+
+    // Verifica se campo cep possui valor informado.
+    if (cep !== '') {
+      // Expressão regular para validar o CEP.
+      const validacep = /^[0-9]{8}$/;
+
+      // Valida o formato do CEP.
+      if (validacep.test(cep)) {
+        this.resetaDadosForm();
+
+        this.http.get(`//viacep.com.br/ws/${cep}/json`)
+          .subscribe(dados => this.populaDadosForm(dados));
+      }
+    }
   }
 
   populaDadosForm(dados) {
@@ -145,8 +151,8 @@ export class DataFormComponent implements OnInit {
     // console.log(form);
   }
 
-  resetaDadosForm(formulario) {
-    formulario.patchValue({
+  resetaDadosForm() {
+    this.formulario.patchValue({
       endereco: {
         rua: null,
         complemento: null,

@@ -26,6 +26,6 @@ import { CommonModule } from '@angular/common';
     FormDebugComponent,
     CampoControlErroComponent
   ],
-  providers: [ DropdownService, ConsultaCepService ]
+  providers: [ DropdownService ]
 })
 export class SharedModule { }
