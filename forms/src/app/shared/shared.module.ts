@@ -1,5 +1,4 @@
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ConsultaCepService } from './services/consulta-cep.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DropdownService } from './services/dropdown.service';
 import { CampoControlErroComponent } from './campo-control-erro/campo-control-erro.component';
