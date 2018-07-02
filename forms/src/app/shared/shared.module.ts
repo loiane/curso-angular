@@ -18,10 +18,6 @@ import { CommonModule } from '@angular/common';
     CampoControlErroComponent
   ],
   exports: [
-    CommonModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
     FormDebugComponent,
     CampoControlErroComponent
   ],
