@@ -98,11 +98,19 @@
         <option *ngFor="let cargo of cargos" [ngValue]="cargo">{{ cargo.desc }}</option>
       </select>
     </div>
+
+    <div class="col-md-3" [ngClass]="aplicaCssErro('tecnologias')">
+      <label for="tecnologias" class="control-label">Tecnologias</label>
+      <select multiple class="form-control" id="tecnologias" formControlName="tecnologias" [compareWith]="comparartecnologiass">
+        <option *ngFor="let tecnologia of tecnologias" [value]="tecnologia.nome">{{ tecnologia.desc }}</option>
+      </select>
+    </div>
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
-  <button class="btn" (click)="resetar()">Cancelar</button>
-  <button class="btn" (click)="setarCargo()">Cargo</button>
+  <button class="btn btn-default" (click)="resetar()">Cancelar</button>
+  <button class="btn btn-info" (click)="setarCargo()">Cargo</button>
+  <button class="btn btn-info" (click)="setarTecnologias()">Tecnologias</button>
 
   <app-form-debug [form]="formulario"></app-form-debug>
 </form>
