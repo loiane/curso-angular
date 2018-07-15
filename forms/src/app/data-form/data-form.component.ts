@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { EstadoBr } from './../shared/models/estado-br.model';
 import { DropdownService } from './../shared/services/dropdown.service';
 import { ConsultaCepService } from '../shared/services/consulta-cep.service';
@@ -18,6 +18,8 @@ export class DataFormComponent implements OnInit {
   cargos: any[];
   tecnologias: any[];
   newsletterOp: any[];
+
+  frameworks = ['Angular', 'React', 'Vue', 'Sencha'];
 
   constructor(
     private formBuilder: FormBuilder,
@@ -65,7 +67,8 @@ export class DataFormComponent implements OnInit {
       cargo: [null],
       tecnologias: [null],
       newsletter: ['s'],
-      termos: [null, Validators.pattern('true')]
+      termos: [null, Validators.pattern('true')],
+      frameworks: this.buildFrameworks()
     });
 
     // tslint:disable-next-line:max-line-length
@@ -73,12 +76,33 @@ export class DataFormComponent implements OnInit {
     // [Validators.required, Validators.minLength(3), Validators.maxLength(20)]
   }
 
+  buildFrameworks() {
+    const values = this.frameworks.map(v => new FormControl(false));
+    return this.formBuilder.array(values);
+    /* this.formBuilder.array( [
+      new FormControl(false), // angular
+      new FormControl(false), // react
+      new FormControl(false), // vue
+      new FormControl(false) // sencha
+    ]); */
+  }
+
   onSubmit() {
     console.log(this.formulario);
 
+    let valueSubmit = Object.assign({}, this.formulario.value);
+
+    valueSubmit = Object.assign(valueSubmit, {
+      frameworks: valueSubmit.frameworks
+      .map((v, i) => v ? this.frameworks[i] : null)
+      .filter(v => v !== null)
+    });
+
+    console.log(valueSubmit);
+
     if (this.formulario.valid) {
       this.http
-        .post('https://httpbin.org/post', JSON.stringify(this.formulario.value))
+        .post('https://httpbin.org/post', JSON.stringify({}))
         .subscribe(
           dados => {
             console.log(dados);

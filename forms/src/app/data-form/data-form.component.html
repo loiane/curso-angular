@@ -109,7 +109,7 @@
     <div class="col-md-3" [ngClass]="aplicaCssErro('newsletter')">
       <label for="newsletter" class="control-label">Newsletter</label>
       <div id="newsletter" class="row">
-        <div class="col-sm-4" *ngFor="let item of newsletterOp" >
+        <div class="col-sm-4" *ngFor="let item of newsletterOp">
           <label class="radio-inline">
             <input type="radio" [value]="item.valor" formControlName="newsletter" /> {{ item.desc }}
           </label>
@@ -129,6 +129,20 @@
         </app-campo-control-erro>
       </div>
     </div>
+
+    <div class="col-md-3" [ngClass]="aplicaCssErro('frameworks')">
+      <label for="frameworks">Frameworks</label>
+      <div id="frameworks" class="row">
+        <div class="checkbox" class="col-sm-4"
+          formArrayName="frameworks"
+          *ngFor="let item of formulario.get('frameworks').controls; let i = index" >
+          <label class="checkbox-inline">
+            <input type="checkbox" [formControlName]="i"> {{ frameworks[i] }}
+          </label>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
