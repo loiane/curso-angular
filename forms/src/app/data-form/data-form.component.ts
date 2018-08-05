@@ -236,4 +236,8 @@ export class DataFormComponent implements OnInit {
     return this.verificaEmailService.verificarEmail(formControl.value)
       .pipe(map(emailExiste => emailExiste ? { emailInvalido: true } : null));
   }
+
+  getCampo(campo: string) {
+    return this.formulario.get(campo);
+  }
 }
