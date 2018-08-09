@@ -8,6 +8,10 @@ const routes: Routes = [
   {
     path: 'cursos',
     loadChildren: './cursos/cursos.module#CursosModule'
+  },
+  {
+    path: 'rxjs-poc',
+    loadChildren: './unsubscribe-rxjs/unsubscribe-rxjs.module#UnsubscribeRxjsModule'
   }
 ];
 

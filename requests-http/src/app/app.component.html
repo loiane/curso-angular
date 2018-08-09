@@ -1,17 +1,19 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <a class="navbar-brand" href="#">Http</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+    aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/']" routerLinkActive="active">Home
-          <span class="sr-only">(current)</span>
-        </a>
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" [routerLink]="['/cursos']" routerLinkActive="active">Cursos</a>
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/cursos']">Cursos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" [routerLink]="['/rxjs-poc']">RxJS POC</a>
       </li>
     </ul>
   </div>
