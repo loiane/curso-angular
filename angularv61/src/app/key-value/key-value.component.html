@@ -1,0 +1,15 @@
+<div *ngFor="let curso of cursos" >
+  <ul>
+    <li *ngFor="let prop of curso | keyvalue" >
+      {{ prop.key }}: {{ prop.value }}
+    </li>
+  </ul>
+</div>
+<span>-----</span>
+<div *ngFor="let curso of cursos" >
+  <ul>
+    <li *ngFor="let prop of curso | keyvalue:cursosComparator" >
+      {{ prop.key }}: {{ prop.value }}
+    </li>
+  </ul>
+</div>
