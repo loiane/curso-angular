@@ -113,14 +113,63 @@ Aulas publicadas/programadas
 * 70: Definindo rota padrão e wildcard (rota não encontrada)
 * 71: Estilo de url: HTML5 ou usando #
 
-#### Formulários (Templates)
-* Aulas a serem publicadas
+## Formulários (Templates)
+* 72: Formulários (template vs data / reativo) Introdução
+* 73: Formulários - Criando o projeto inicial com Bootstrap 3
+* 74: Forms (template driven) Controles ngForm, ngSubmit e ngModel
+* 75: Forms (template driven) Inicializando valores com ngModel
+* 76: Forms (template driven) Módulos e FormsModule
+* 77: Forms (template driven) Aplicando validação nos campos
+* 78: Forms (template driven) Aplicando CSS na validação dos campos
+* 79: Forms (template driven) Mostrando mensagens de erro de validação
+* 80: Forms (template driven) Desabilitando o botão de submit para formulário inválido
+* 81: Forms (Dica): Verificando dados do Form no template com JSON
+* 82: Forms (template driven) Adicionando campos de endereço (form layout Bootstrap 3)
+* 83: Forms (template driven) Refatorando (simplificando) CSS e mensagens de erro
+* 84: Forms (template driven) Form groups (agrupando dados)
+* 85: Forms (template driven) Pesquisando endereço automaticamente com CEP
+* 86: Forms (template driven) Populando campos com setValue e patchValue (CEP)
+* 87: Forms (template driven) Submetendo valores com HTTP POST
 
-#### Formulários (Data)
-* Aulas a serem publicadas
+## Formulários (Reativos)
+* 88: Formulários reativos (data driven) Introdução
+* 89: Formulários reativos: Configuração (Módulo e Componente)
+* 90: Formulários reativos: Criando um form com código Angular
+* 91: Formulários reativos: Sincronizando HTML com FormGroup
+* 92: Formulários reativos: Fazendo submit
+* 93: Resetando o form
+* 94: Formulários reativos: Aplicando validação nos campos
+* 95: Formulários reativos: Acesso ao FormControl no HTML e CSS de validação dos campos
+* 96: Formulários reativos: Endereço (migrando de template driven para form reativo)
+* 97: Formulários reativos: Form groups (agrupando dados)
+* 98: Formulários reativos: Autopopulando endereço com CEP (setValue e patchValue)
+* 99: Formulários reativos: Verificar validação dos campos com botão submit
+* 100: Formulários: Criando um serviço de Estados Brasileiros
+* 101: Formulários: Serviço de consulta CEP + provideIn
+* 102: Formulários reativos: Combobox simples (select)
+* 103: Formulários reativos: Combobox com Objeto (ngValue e compareWith)
+* 104: Formulários reativos: Combobox Múltiplo (Select Multiple)
+* 105: Formulários reativos: Radio Button (Botão do tipo Rádio)
+* 106: Formulários reativos: Checkbox Toggle
+* 107: Formulários reativos: FormArray: Checkboxes Dinâmicos
+* 108: Formulários reativos: Validação Customizada (FormArray Checkboxes)
+* 109: Formulários reativos: Validação Customizada (CEP)
+* 110: Formulários reativos: Validação entre dois campos (confirmar email)
+* 111: Formulários reativos: Validação Assíncrona
+* 112: Formulários reativos: Serviço de Mensagens de Erros
+* 113: Formulários reativos: Reagindo à mudanças reativamente
+* 114: Formulários reativos: Campo input customizado (ControlValueAcessor)
+* 115: Formulários reativos: Classe base para Forms (herança no Angular)
+* 116: Formulários reativos: Combobox aninhado: Estado + Cidade
 
 ## Integração com server
-* Aulas a serem publicadas
+* 117: Http / HttpClient: Introdução
+* 118: Instalando Bootstrap 4
+* 119: Http: Simulando Servidor REST (json-server)
+* 120: Http GET: listar registros
+* 121: Http: Dica: Variável de Ambiente
+* 122: Http GET + Pipe Async
+* 123: Http + RxJS: Unsubscribe Automático
 
 #### CRUD Mestre-detalhe
 * Aulas a serem publicadas
