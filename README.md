@@ -1,12 +1,9 @@
 Curso Angular (versões 2, 4, 5, 6, 7, 8) Gratuito
 =================
 
-[![Build Status](https://travis-ci.org/loiane/curso-angular2.svg?branch=master)](https://travis-ci.org/loiane/curso-angular2)
-[![Greenkeeper badge](https://badges.greenkeeper.io/loiane/curso-angular2.svg.svg)](https://greenkeeper.io/)
-
 Código fonte apresentado no curso de Angular gratuito do blog loiane.com - loiane.training
 
-**Código atualizado para Angular v5.0.0-beta.0**
+**Código atualizado para Angular v7**
 
 Arquivo `package.json` exposto no projeto para ser notificado das atualizações dos pacotes npm via greenkeeper.io.
 
