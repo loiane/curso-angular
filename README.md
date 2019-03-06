@@ -8,7 +8,7 @@ Código fonte apresentado no curso de Angular gratuito do blog loiane.com - loia
 Arquivo `package.json` exposto no projeto para ser notificado das atualizações dos pacotes npm via greenkeeper.io.
 
 ### Link do curso com certificado:
-* [http://loiane.training/curso/angular-2/](http://loiane.training/curso/angular-2/)
+* [http://loiane.training/curso/angular/](http://loiane.training/curso/angular/)
 
 ### Playlist Youtube
 * [Clique aqui para assistir a todos os vídeos já publicados](https://www.youtube.com/playlist?list=PLGxZ4Rq3BOBoSRcKWEdQACbUCNWLczg2G)
@@ -167,6 +167,3 @@ Aulas publicadas/programadas
 * 121: Http: Dica: Variável de Ambiente
 * 122: Http GET + Pipe Async
 * 123: Http + RxJS: Unsubscribe Automático
-
-#### CRUD Mestre-detalhe
-* Aulas a serem publicadas
