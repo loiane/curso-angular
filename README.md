@@ -1,4 +1,4 @@
-Curso Angular (versões 2.x 4.x e 5.x) Gratuito
+Curso Angular (versões 2, 4, 5, 6, 7, 8) Gratuito
 =================
 
 [![Build Status](https://travis-ci.org/loiane/curso-angular2.svg?branch=master)](https://travis-ci.org/loiane/curso-angular2)
