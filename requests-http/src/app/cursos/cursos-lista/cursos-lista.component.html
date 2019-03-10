@@ -5,11 +5,11 @@
     </div>
     <div class="float-right">
       <button type="button" class="btn btn-primary" [routerLink]="['novo']">Novo Curso</button>
-      <button type="button" class="btn btn-secondary" (click)="onRefresh()" >Atualizar</button>
+      <button type="button" class="btn btn-secondary" (click)="onRefresh()">Atualizar</button>
     </div>
   </div>
   <div class="card-body">
-    <table class="table table-hover" *ngIf="cursos$ | async as cursos; else loading" >
+    <table class="table table-hover" *ngIf="(cursos$ | async) as cursos; else loading">
       <thead>
         <tr>
           <th>#</th>
@@ -18,7 +18,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let curso of cursos" >
+        <tr *ngFor="let curso of cursos">
           <td>{{ curso.id }}</td>
           <td>{{ curso.nome }}</td>
           <td>
@@ -27,7 +27,7 @@
                 Atualizar
               </button>
 
-              <button class="btn btn-outline-danger mb-1 btn-sm">
+              <button class="btn btn-outline-danger mb-1 btn-sm" (click)="onDelete(curso)">
                 Remover
               </button>
             </span>
@@ -38,7 +38,7 @@
 
     <ng-template #loading>
       <span>Carregando Cursos...</span>
-  </ng-template>
+    </ng-template>
 
     <!--ng-template #loadingError>
       <div *ngIf="error$ | async; else loading" >
@@ -50,3 +50,11 @@
     </ng-template -->
   </div>
 </div>
+
+<ng-template #deleteModal>
+  <div class="modal-body text-center">
+    <p>Tem certeza que deseja remover esse curso?</p>
+    <button type="button" class="btn btn-default" (click)="onConfirmDelete()">Sim</button>
+    <button type="button" class="btn btn-primary" (click)="onDeclineDelete()">Nao</button>
+  </div>
+</ng-template>
