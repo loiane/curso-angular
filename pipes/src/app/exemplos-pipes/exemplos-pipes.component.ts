@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs/Rx';
+import { interval } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-exemplos-pipes',
@@ -7,6 +8,8 @@ import { Observable } from 'rxjs/Rx';
   styleUrls: ['./exemplos-pipes.component.css']
 })
 export class ExemplosPipesComponent implements OnInit {
+
+  constructor() { }
 
   livro: any = {
     titulo: 'Learning JavaScript Data Structures and Algorithms 2nd ed',
@@ -21,15 +24,24 @@ export class ExemplosPipesComponent implements OnInit {
 
   filtro: string;
 
-  addCurso(valor){
+  valorAsync = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Valor assíncrono'), 2000);
+  });
+
+  valorAsync2 = interval(2000)
+  .pipe(
+    map(valor => 'Valor assíncrono 2')
+  );
+
+  addCurso(valor) {
     this.livros.push(valor);
     console.log(this.livros);
   }
 
-  obterCursos(){
+  obterCursos() {
 
     if (this.livros.length === 0 || this.filtro === undefined
-    || this.filtro.trim() === ''){
+    || this.filtro.trim() === '') {
       return this.livros;
     }
 
@@ -37,15 +49,6 @@ export class ExemplosPipesComponent implements OnInit {
        v => v.toLocaleLowerCase().includes(this.filtro.toLocaleLowerCase())
     );
   }
-
-  valorAsync = new Promise((resolve, reject) => {
-    setTimeout(() => resolve('Valor assíncrono'), 2000)
-  });
-
-  valorAsync2 = Observable.interval(2000)
-    .map(valor => 'Valor assíncrono 2');
-
-  constructor() { }
 
   ngOnInit() {
   }
