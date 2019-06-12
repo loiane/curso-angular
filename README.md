@@ -3,9 +3,7 @@ Curso Angular (versões 2, 4, 5, 6, 7, 8) Gratuito
 
 Código fonte apresentado no curso de Angular gratuito do blog loiane.com - loiane.training
 
-**Código atualizado para Angular v7**
-
-Arquivo `package.json` exposto no projeto para ser notificado das atualizações dos pacotes npm via greenkeeper.io.
+**Código atualizado para Angular v8**
 
 ### Link do curso com certificado:
 * [http://loiane.training/curso/angular/](http://loiane.training/curso/angular/)
