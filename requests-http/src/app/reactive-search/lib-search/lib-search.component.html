@@ -16,18 +16,18 @@
     </div>
   </div>
   <div class="search-list">
-    <h3>303 Records Found</h3>
+    <h3>{{ total }} Registros encontrados.</h3>
     <table class="table" id="myTable">
       <thead>
         <tr>
-          <th>Title</th>
-          <th>Category</th>
+          <th>Nome</th>
+          <th>Versão</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>HTML</td>
-          <td>Web Development</td>
+        <tr *ngFor="let result of results$ | async">
+          <td>{{ result.name }}</td>
+          <td>{{ result.version }}</td>
         </tr>
       </tbody>
     </table>
