@@ -12,3 +12,4 @@ npm-debug.log
 .vscode/angulardoc.json
 forms/.vscode/settings.json
 requests-http/.vscode/settings.json
+requests-http/.firebase/
