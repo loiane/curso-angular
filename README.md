@@ -25,7 +25,7 @@ Aulas publicadas/programadas
 * 01: Introdução + Arquitetura
 * 02: Ambiente de desenvolvimento
 * 03: Primeira app (Hello World)
-* 04: Introduço ao Typescript para Angular
+* 04: Introdução ao Typescript para Angular
 * 05: Módulos (ngModule)
 * 06: Templates
 * 07: Serviços (Services) e Injeção de dependência (DI)
