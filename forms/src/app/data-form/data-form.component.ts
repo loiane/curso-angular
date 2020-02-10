@@ -208,4 +208,8 @@ export class DataFormComponent extends BaseFormComponent implements OnInit {
     return this.verificaEmailService.verificarEmail(formControl.value)
       .pipe(map(emailExiste => emailExiste ? { emailInvalido: true } : null));
   }
+
+  getFrameworksControls() {
+    return this.formulario.get('frameworks') ? (<FormArray>this.formulario.get('frameworks')).controls : null;
+  }
 }
