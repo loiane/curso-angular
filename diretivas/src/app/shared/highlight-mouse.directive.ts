@@ -1,5 +1,4 @@
-import { Directive, HostListener, HostBinding,
-  ElementRef, Renderer } from '@angular/core';
+import { Directive, HostListener, HostBinding, ElementRef, Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[highlightMouse]'
