@@ -3,7 +3,7 @@ Curso Angular Gratuito
 
 Código fonte apresentado no curso de Angular gratuito do blog loiane.com - loiane.training
 
-**Código atualizado para Angular v9**
+**Código atualizado para Angular v10**
 
 ### Link do curso com certificado:
 * [http://loiane.training/curso/angular/](http://loiane.training/curso/angular/)
