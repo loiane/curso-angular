@@ -19,4 +19,3 @@ npm i
 cd ~/workspace/servicos
 npm i
 cd ~/workspace
-npm i -g @angular/cli
