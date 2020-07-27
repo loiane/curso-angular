@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Directive } from '@angular/core';
 import { FormGroup, FormArray } from '@angular/forms';
 
+@Directive()
 export abstract class BaseFormComponent implements OnInit {
 
   formulario: FormGroup;
