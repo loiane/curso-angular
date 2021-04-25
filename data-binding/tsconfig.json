@@ -16,7 +16,7 @@
       "es2017",
       "dom"
     ],
-    "module": "esnext",
+    "module": "es2020",
     "baseUrl": "./"
   }
 }
