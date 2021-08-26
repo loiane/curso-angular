@@ -19,7 +19,18 @@ Particularmente recomendo o uso do Visual Studio Code como editor - que é o mes
 
 Para pacote de plugins, instale esse pacote de extensões VSCode que contém todos os plugins mostrados durante as aulas do curso: [https://marketplace.visualstudio.com/items?itemName=loiane.angular-extension-pack](https://marketplace.visualstudio.com/items?itemName=loiane.angular-extension-pack).
 
-### Lista das aulas
+### ✏️ Lista das aulas CRUD Angular + Spring
+
+<details><summary><b>Módulo 1: Introdução</b></summary>
+
+- Introdução e Criação do Projeto
+- Overview do Projeto e Instalando o Angular Material
+- Criando uma Toolbar
+- Criando o Módulo de Cursos e Usando Roteamento com Lazy Loading
+- Customizando o Tema do Angular Material
+</details>
+
+### Lista das aulas Curso Angular
 
 Aulas publicadas/programadas
 
