@@ -7,6 +7,7 @@ import com.loiane.repository.CourseRepository;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.AllArgsConstructor;
@@ -20,7 +21,7 @@ public class CourseController {
 
     //@RequestMapping(method = RequestMethod.GET)
     @GetMapping
-    public List<Course> list() {
+    public @ResponseBody List<Course> list() {
         return courseRepository.findAll();
     }
 
