@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CursosService } from '../cursos.service';
 import { Curso } from '../curso';
-import { Observable, empty, of, Subject, EMPTY } from 'rxjs';
+import { Observable, EMPTY, of, Subject, EMPTY } from 'rxjs';
 import { catchError, switchMap, take } from 'rxjs/operators';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { AlertModalComponent } from '../../shared/alert-modal/alert-modal.component';
@@ -52,7 +52,7 @@ export class CursosListaComponent implements OnInit {
         console.error(error);
         // this.error$.next(true);
         this.handleError();
-        return empty();
+        return EMPTY;
       })
     );
 
