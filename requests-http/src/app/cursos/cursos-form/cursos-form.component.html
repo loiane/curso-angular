@@ -14,10 +14,10 @@
         Por favor informe um nome para o curso.
       </div>
       <div class="invalid-feedback" *ngIf="hasError('nome') && hasError('nome')['minlength']" >
-        Nome precisa ter no mínimo {{ hasError('nome')['minlength'].requiredLength }} caracteres.
+        Nome precisa ter no minimo {{ hasError('nome')['minlength'].requiredLength }} caracteres.
       </div>
       <div class="invalid-feedback" *ngIf="hasError('nome') && hasError('nome')['maxlength']" >
-        Nome precisa ter no máximo {{ hasError('nome')['maxlength'].requiredLength }} caracteres.
+        Nome precisa ter no maximo {{ hasError('nome')['maxlength'].requiredLength }} caracteres.
       </div>
     </div>
   </div>
