@@ -108,6 +108,5 @@
         }
       }
     }
-  },
-  "defaultProject": "crud-angular"
+  }
 }
