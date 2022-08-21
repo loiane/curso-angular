@@ -3,6 +3,10 @@
   max-height: 600px;
 }
 
-table {
-  width: 100%;
+.action-column {
+  flex: 0 0 75px;
+}
+
+.action-column-header {
+  flex: 0 0 55px;
 }
