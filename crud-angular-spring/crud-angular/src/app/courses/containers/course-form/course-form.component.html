@@ -1,11 +1,13 @@
 <mat-card>
-
   <mat-toolbar color="primary">Detalhes do Curso</mat-toolbar>
 
   <mat-card-content>
     <form [formGroup]="form" class="min-width">
       <mat-form-field class="full-width">
-        <input matInput placeholder="Nome" formControlName="name">
+        <input matInput placeholder="Nome" formControlName="name" />
+        <mat-error *ngIf="form.get('name')?.invalid">{{
+          getErrorMessage("name")
+        }}</mat-error>
       </mat-form-field>
 
       <mat-form-field class="full-width">
@@ -15,12 +17,17 @@
           <mat-option value="front-end">Front-End</mat-option>
           <mat-option value="back-end">Back-End</mat-option>
         </mat-select>
+        <mat-error *ngIf="form.get('category')?.invalid">{{
+          getErrorMessage("category")
+        }}</mat-error>
       </mat-form-field>
     </form>
   </mat-card-content>
 
   <mat-card-actions>
-    <button mat-raised-button color="primary" (click)="onSubmit()">Salvar</button>
+    <button mat-raised-button color="primary" (click)="onSubmit()">
+      Salvar
+    </button>
     <button mat-raised-button (click)="onCancel()">Cancelar</button>
   </mat-card-actions>
 </mat-card>
