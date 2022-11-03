@@ -4,7 +4,8 @@
   <mat-card-content>
     <form [formGroup]="form" class="min-width">
       <mat-form-field class="full-width">
-        <input matInput placeholder="Nome" formControlName="name" />
+        <input matInput placeholder="Nome" formControlName="name" #name />
+        <mat-hint align="end">{{ name.value?.length || 0 }} / 100</mat-hint>
         <mat-error *ngIf="form.get('name')?.invalid">{{
           getErrorMessage("name")
         }}</mat-error>
