@@ -1,5 +1,6 @@
 package com.loiane;
 
+import com.loiane.enums.Category;
 import com.loiane.model.Course;
 import com.loiane.repository.CourseRepository;
 
@@ -22,7 +23,7 @@ public class CrudSpringApplication {
 
 			Course c = new Course();
 			c.setName("Angular com Spring");
-			c.setCategory("Front-end");
+			c.setCategory(Category.BACK_END);
 
 			courseRepository.save(c);
 		};
