@@ -1,0 +1,44 @@
+GET http://localhost:8080/api/courses
+
+###
+GET http://localhost:8080/api/courses/abc
+
+###
+POST http://localhost:8080/api/courses HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Angular",
+    "category": "Front-end",
+    "lessons": [
+        {
+          "name": "Introdução",
+          "youtubeUrl": "tPOMG0D57S0"
+        },
+        {
+          "name": "Introdução2",
+          "youtubeUrl": "tPOMG0D57S0"
+        }
+    ]
+  }
+
+###
+PUT http://localhost:8080/api/courses/-1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Angular com Spring",
+    "category": "Back-end",
+    "lessons": [
+      {
+        "id": 1,
+        "name": "Introdução11111",
+        "youtubeUrl": "01234567890"
+      },
+      {
+        "id": 2,
+        "name": "Angular11111",
+        "youtubeUrl": "01234567891"
+      }
+    ]
+  }
