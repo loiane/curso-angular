@@ -13,7 +13,7 @@ content-type: application/json
 
 {
     "name": "Angular",
-    "category": "Fron",
+    "category": "Front-end",
     "lessons": [
         {
           "name": "Introdução",
