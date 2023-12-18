@@ -13,7 +13,7 @@ import { CoursePage } from '../../model/course-page';
 import { MatPaginator, PageEvent, MatPaginatorModule } from '@angular/material/paginator';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { CoursesListComponent } from '../../components/courses-list/courses-list.component';
-import { NgIf, AsyncPipe } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 
@@ -22,7 +22,7 @@ import { MatCardModule } from '@angular/material/card';
     templateUrl: './courses.component.html',
     styleUrls: ['./courses.component.scss'],
     standalone: true,
-    imports: [MatCardModule, MatToolbarModule, NgIf, CoursesListComponent, MatPaginatorModule, MatProgressSpinnerModule, AsyncPipe]
+    imports: [MatCardModule, MatToolbarModule, CoursesListComponent, MatPaginatorModule, MatProgressSpinnerModule, AsyncPipe]
 })
 export class CoursesComponent implements OnInit {
 
