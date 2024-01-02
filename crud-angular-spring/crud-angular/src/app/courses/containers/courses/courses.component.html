@@ -1,17 +1,14 @@
 <mat-card>
   <mat-toolbar color="primary">Cursos Disponíveis</mat-toolbar>
 
-  <div
-    *ngIf="courses$ | async as courses; else loading"
-    class="example-container mat-elevation-z8"
-  >
+  @if (courses$ | async; as courses) {
+  <div class="example-container mat-elevation-z8">
     <app-courses-list
       [courses]="courses.courses"
       (add)="onAdd()"
       (edit)="onEdit($event)"
       (remove)="onRemove($event)"
     ></app-courses-list>
-
     <mat-paginator
       [pageSizeOptions]="[5, 10, 15]"
       showFirstLastButtons
@@ -23,9 +20,9 @@
     >
     </mat-paginator>
   </div>
-  <ng-template #loading>
-    <div class="loading-spinner">
-      <mat-spinner></mat-spinner>
-    </div>
-  </ng-template>
+  } @else {
+  <div class="loading-spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+  }
 </mat-card>
