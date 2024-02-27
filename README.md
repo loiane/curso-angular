@@ -97,8 +97,8 @@ Aulas publicadas/programadas
 * 38: Criando um serviço (Service)
 * 39: Injeção de Dependência (DI) + como usar um serviço em um componente
 * 40: Escopo de instâncias de serviços e módulos
-* 41: Injetando um serviço em outro serviço
-* 42: Comunicação entre componentes usando serviços
+* 41: Comunicação entre componentes usando serviços
+* 42: Injetando um serviço em outro serviço
 
 ## Pipes
 * 43: Pipes (usando pipes, parâmetros e pipes aninhados)
